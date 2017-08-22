@@ -31,8 +31,8 @@
 /*return [
     'class' => 'yii\redisd\RedisdClient',
     'options' => [
-        'host' => '10.2.11.27',//至少两台服务器 可以是一主一从 主的挂了后 自动换从服务器为主
-        'slave' => '10.2.11.27',//至少一台服务器
+        'host' => '127.0.0.1',//至少两台服务器 可以是一主一从 主的挂了后 自动换从服务器为主
+        'slave' => '127.0.0.1',//至少一台服务器
         'port' => 6379,
         'database' => 1,
         'password' => '',
@@ -46,7 +46,7 @@
 return [
     'class' => 'yii\redisd\RedisClusters',
     'options' => [
-        'host' => '10.2.11.31',
+        'host' => '127.0.0.1',
         'port' => 19868,
         'timeout' => 10,
         'expire' => 60,
